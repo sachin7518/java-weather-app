@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Weather Application</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+body {
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial;
+	background: url("Image/w2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.search-box {
+	width: 520px;
+	padding: 50px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(15px);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	color: white;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+
+.search-input {
+	border-radius: 30px;
+	padding: 12px;
+	border: none;
+}
+
+.search-btn {
+	border-radius: 30px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="search-box">
+
+		<div class="title">
+			<h3 class="text-dark fw-bold">Welcome to the Weather Application</h3>
+		</div>
+
+		<form action="weatherServlet" method="post">
+
+			<input type="text" name="city" class="form-control search-input mb-3"
+				placeholder="Enter City Name" required>
+
+			<button class="btn btn-warning w-100 search-btn">Check
+				Weather</button>
+
+		</form>
+		
+
+	</div>
+
+
+</body>
+</html>
